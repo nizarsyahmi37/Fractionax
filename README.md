@@ -1,24 +1,31 @@
 # Fractionax
 ***Own the Unreachable, Together***
 
-## Prize Tracks
+
+## Team Members
+- [nizarsyahmi37](https://github.com/nizarsyahmi37 "nizarsyahmi37")
+- [dahrichan13](https://github.com/dahrichan13 "dahrichan13")
+- [http-kylie](https://github.com/http-kylie "http-kylie")
+
+
+## Scroll Open Prize Tracks
 
 ### General: $50,000
-Every project will be automatically eligible for the general track. Dream big and build bold, innovative creations that push Scroll's potential to new heights.
+	Every project will be automatically eligible for the general track. Dream big and build bold, innovative creations that push Scroll's potential to new heights.
 
 | 1st place | 2nd place | 3rd place |
 | --- | --- | --- |
 | $25,000 | $15,000 | $10,000 |
 
 ### DeFi: $12,500
-Push the boundaries of DeFi innovation on Scroll. Build secure, scalable, and transparent solutions for lending, trading, and asset management.
+	Push the boundaries of DeFi innovation on Scroll. Build secure, scalable, and transparent solutions for lending, trading, and asset management.
 
 | 1st place | 2nd place |
 | --- | --- |
 | $7,500 | $5,000 |
 
 ### RWAs: $12,500
-Tokenize and integrate real-world assets into the blockchain via Scroll, bridging physical and digital economies.
+	Tokenize and integrate real-world assets into the blockchain via Scroll, bridging physical and digital economies.
 
 | 1st place | 2nd place |
 | --- | --- |
@@ -28,7 +35,7 @@ Tokenize and integrate real-world assets into the blockchain via Scroll, bridgin
 ## Schedule
 
 ### Week 1: Generating Ideas
-Dive into Scroll’s project idea list and how to create your own  
+	Dive into Scroll’s project idea list and how to create your own  
 
 - [ ] ***Jan 29*** — [Generating Ideas Lecture](# "Generating Ideas Lecture")
 - [ ] ***Jan 29 - 30*** — [Submit your ideas form](# "Submit your ideas form")
@@ -36,7 +43,7 @@ Dive into Scroll’s project idea list and how to create your own
 - [ ] ***Jan 30*** — [Generating Ideas Lab](# "Generating Ideas Lab")
 
 ### Week 2: Building in Public
-Build in public to expand your social media presence 
+	Build in public to expand your social media presence 
 
 - [ ] ***Feb 3*** — [Submit your week 1 progress form](# "Submit your week 1 progress form")
 - [ ] ***Feb 3*** — [Unlock Chain Abstraction with Arcana on Scroll Workshop](# "Unlock Chain Abstraction with Arcana on Scroll Workshop")
@@ -46,7 +53,7 @@ Build in public to expand your social media presence
 - [ ] ***Feb 7*** — [Build in Public Lab](# "Build in Public Lab")
 
 ### Week 3: MVPs
-Discover the components of a minimum viable product
+	Discover the components of a minimum viable product
 
 - [ ] ***Feb 10*** — [Submit your week 2 progress form](# "Submit your week 2 progress form")
 - [ ] ***Feb 10*** — [E2E Wallet Experiences with Reown Appkit on Scroll Workshop](# "E2E Wallet Experiences with Reown Appkit on Scroll Workshop")
@@ -56,7 +63,7 @@ Discover the components of a minimum viable product
 - [ ] ***Feb 14*** — [MVP Lab](# "MVP Lab")
 
 ### Week 4: Design
-Examine and apply key design principles to your dapp
+	Examine and apply key design principles to your dapp
 
 - [ ] ***Feb 17*** — [Submit your week 3 progress form](# "Submit your week 3 progress form")
 - [ ] ***Feb 19*** — [Design Lecture](# "Design Lecture")
@@ -65,7 +72,7 @@ Examine and apply key design principles to your dapp
 - [ ] ***Feb 21*** — [Design Lab](# "Design Lab")
 
 ### Week 5: Demos
-Create and refine your pitch
+	Create and refine your pitch
 
 - [ ] ***Feb 24*** — [Submit your week 4 progress form](# "Submit your week 4 progress form")
 - [ ] ***Feb 26*** — [Demos Lecture](# "Demos Lecture")
@@ -74,7 +81,7 @@ Create and refine your pitch
 - [ ] ***Feb 28*** — [Demos Lab](# "Demos Lab")
 
 ### Week 6: Growth
-Land and expand your first 100 users
+	Land and expand your first 100 users
 
 - [ ] ***Mar 3*** — [Submit your week 5 progress form](# "Submit your week 5 progress form")
 - [ ] ***Mar 5*** — [Growth Lecture](# "Growth Lecture")
@@ -83,7 +90,7 @@ Land and expand your first 100 users
 - [ ] ***Mar 7*** — [Growth Lab](# "Growth Lab")
 
 ### Week 7:
-Project Submissions!
+	Project Submissions!
 
 - [ ] ***Mar 12*** — [Scroll Open Send-Off](# "Scroll Open Send-Off")
 - [ ] ***Mar 12*** — [Project submissions open](# "Project submissions open")
@@ -95,9 +102,3 @@ Project Submissions!
 ## Resources
 - [Scroll Open Resources](https://scrollzkp.notion.site/scrollopen "Scroll Open Resources")
 - [Tutorials](https://www.levelup.xyz/ "Tutorials")
-
-
-## Team Members
-- [nizarsyahmi37](https://github.com/nizarsyahmi37 "nizarsyahmi37")
-- [dahrichan13](https://github.com/dahrichan13 "dahrichan13")
-- [http-kylie](https://github.com/http-kylie "http-kylie")
