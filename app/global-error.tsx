@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	description: "Own the Unreachable, Together"
 }
 
-export default async function GlobalError({
+export default function GlobalError({
 	error,
 	reset
 }: {
