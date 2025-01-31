@@ -37,10 +37,10 @@
 ### Week 1: Generating Ideas
 	Dive into Scroll’s project idea list and how to create your own  
 
-- [ ] ***Jan 29*** — [Generating Ideas Lecture](# "Generating Ideas Lecture")
-- [ ] ***Jan 29 - 30*** — [Submit your ideas form](# "Submit your ideas form")
-- [ ] ***Jan 30*** — [Generating Ideas Vlog](# "Generating Ideas Vlog")
-- [ ] ***Jan 30*** — [Generating Ideas Lab](# "Generating Ideas Lab")
+- [x] ***Jan 29*** — [Generating Ideas Lecture](https://www.youtube.com/watch?v=a8DUVu8grCk "Generating Ideas Lecture")
+- [x] ***Jan 29 - 30*** — [Submit your ideas form](https://tally.so/r/mKWl4A "Submit your ideas form")
+- [x] ***Jan 30*** — [Generating Ideas Vlog](https://www.youtube.com/watch?v=Ag_48EJkocM "Generating Ideas Vlog")
+- [x] ***Jan 30*** — [Generating Ideas Lab](https://www.youtube.com/watch?v=aq7UebjANYc "Generating Ideas Lab")
 
 ### Week 2: Building in Public
 	Build in public to expand your social media presence 
