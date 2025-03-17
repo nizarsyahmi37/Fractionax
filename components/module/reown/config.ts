@@ -4,15 +4,15 @@ import { WagmiAdapter } from "@reown/appkit-adapter-wagmi"
 // import { SolanaAdapter } from "@reown/appkit-adapter-solana/react"
 // import { mainnet, arbitrum, solana, solanaDevnet, solanaTestnet } from "@reown/appkit/networks"
 // import { HuobiWalletAdapter, SolflareWalletAdapter } from "@solana/wallet-adapter-wallets"
-import { scroll, scrollSepolia } from "@reown/appkit/networks"
+import { scrollSepolia } from "@reown/appkit/networks"
 
-export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID || ""
+export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID
 
-if (!projectId || projectId === "") {
+if (!projectId) {
 	throw new Error("Project ID is not defined")
 }
 
-export const networks = [scroll, scrollSepolia] as [AppKitNetwork, ...AppKitNetwork[]]
+export const networks = [scrollSepolia] as [AppKitNetwork, ...AppKitNetwork[]]
 
 export const wagmiAdapter = new WagmiAdapter({
 	storage: createStorage({

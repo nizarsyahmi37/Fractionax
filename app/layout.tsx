@@ -2,8 +2,10 @@ import type { Metadata } from "next"
 import { headers } from "next/headers"
 import { ReactNode } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
+import { EdgeStoreProvider } from "@/lib/edgestore"
 
 import ContextProvider from "@/components/module/reown/context"
+import Layout from "@/components/module/general/layout"
 
 import "./globals.css"
 
@@ -28,12 +30,16 @@ export default async function RootLayout({
 			>
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="dark"
+					defaultTheme="light"
 					// enableSystem
 					disableTransitionOnChange
 				>
 					<ContextProvider cookies={cookies}>
-						{children}
+						<EdgeStoreProvider>
+							<Layout>
+								{children}
+							</Layout>
+						</EdgeStoreProvider>
 					</ContextProvider>
 				</ThemeProvider>
 			</body>

@@ -1,5 +1,6 @@
+import { terms } from "@/content/general/general"
+
 import ImageDynamic from "@/components/ui/dynamic-image"
-import terms from "@/content/general/terms.json"
 
 export default function ViewComingSoon() {
 	return (

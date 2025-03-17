@@ -31,7 +31,7 @@ export const modal = createAppKit({
 		analytics: true
 	},
 	themeVariables: {
-		"--w3m-accent": "#114036",
+		"--w3m-accent": "#16AF8E",
 	}
 })
 
