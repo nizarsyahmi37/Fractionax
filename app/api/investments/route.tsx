@@ -61,7 +61,9 @@ export async function POST(req: NextRequest) {
 		contract,
 		keywords,
 		content,
-		images
+		images,
+		minimum,
+		maximum
 	} = await req.json()
 
 	let result
@@ -83,7 +85,9 @@ export async function POST(req: NextRequest) {
 			contract,
 			keywords,
 			content,
-			images
+			images,
+			minimum,
+			maximum
 		}).returning()
 
 		return NextResponse.json({

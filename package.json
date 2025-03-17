@@ -29,11 +29,13 @@
 		"start": "next start",
 		"lint": "next lint",
 		"generate": "drizzle-kit generate",
+		"push": "drizzle-kit push",
 		"migrate": "drizzle-kit migrate"
 	},
 	"dependencies": {
 		"@edgestore/react": "^0.3.3",
 		"@edgestore/server": "^0.3.3",
+		"@radix-ui/react-dialog": "^1.1.6",
 		"@reown/appkit": "^1.6.5",
 		"@reown/appkit-adapter-solana": "^1.6.5",
 		"@reown/appkit-adapter-wagmi": "^1.6.5",
