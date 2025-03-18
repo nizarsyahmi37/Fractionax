@@ -34,13 +34,13 @@ export default async function RootLayout({
 					// enableSystem
 					disableTransitionOnChange
 				>
-					<ContextProvider cookies={cookies}>
-						<EdgeStoreProvider>
+					<EdgeStoreProvider>
+						<ContextProvider cookies={cookies}>
 							<Layout>
 								{children}
 							</Layout>
-						</EdgeStoreProvider>
-					</ContextProvider>
+						</ContextProvider>
+					</EdgeStoreProvider>
 				</ThemeProvider>
 			</body>
 		</html>
