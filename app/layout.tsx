@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { headers } from "next/headers"
 import { ReactNode } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
-import { EdgeStoreProvider } from "@/lib/edgestore"
+// import { EdgeStoreProvider } from "@/lib/edgestore"
 
 import ContextProvider from "@/components/module/reown/context"
 import Layout from "@/components/module/general/layout"
@@ -34,13 +34,13 @@ export default async function RootLayout({
 					// enableSystem
 					disableTransitionOnChange
 				>
-					<EdgeStoreProvider>
+					{/* <EdgeStoreProvider> */}
 						<ContextProvider cookies={cookies}>
 							<Layout>
 								{children}
 							</Layout>
 						</ContextProvider>
-					</EdgeStoreProvider>
+					{/* </EdgeStoreProvider> */}
 				</ThemeProvider>
 			</body>
 		</html>
