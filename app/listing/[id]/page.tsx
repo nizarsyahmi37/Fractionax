@@ -67,23 +67,23 @@ export default function Page({
 			value: parseEther((amount * 0.02).toString())
 		})
 
-		const { request } = await createPublicClient({
-			chain: scrollSepolia,
-			transport: http()
-		  }).simulateContract({
-			address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
-			abi: wagmiAbi,
-			functionName: 'buy',
-			args: [
+		// const { request } = await createPublicClient({
+		// 	chain: scrollSepolia,
+		// 	transport: http()
+		//   }).simulateContract({
+		// 	address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
+		// 	abi: wagmiAbi,
+		// 	functionName: 'buy',
+		// 	args: [
 				
-			],
-			account: getAddress(account.address ? account.address?.toString() : "0x0000000000000000000000000000000000000000"),
-			value: parseEther('1')
-		})
-		await createWalletClient({
-			chain: scrollSepolia,
-			transport: custom(window.ethereum)
-		}).writeContract(request)		  
+		// 	],
+		// 	account: getAddress(account.address ? account.address?.toString() : "0x0000000000000000000000000000000000000000"),
+		// 	value: parseEther('1')
+		// })
+		// await createWalletClient({
+		// 	chain: scrollSepolia,
+		// 	transport: custom(window.ethereum)
+		// }).writeContract(request)		  
 	}
 	  
 	useEffect(() => {
