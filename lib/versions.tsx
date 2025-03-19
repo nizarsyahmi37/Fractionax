@@ -11,8 +11,9 @@ export const getCommit = () => {
 			.trim()
 	} catch (error) {
 		commitHash = process.env.VERCEL_GIT_COMMIT_SHA
-			? process.env.VERCEL_GIT_COMMIT_SHA.substring(0, 7) // Shorten SHA
+			? process.env.VERCEL_GIT_COMMIT_SHA.substring(0, 7)
 			: "unknown"
+		console.log(error)
 	}
 	
 	return {
