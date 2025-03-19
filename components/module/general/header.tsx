@@ -1,6 +1,6 @@
 import NavHeader from "@/components/module/nav/header"
 import ImageDynamic from "@/components/ui/dynamic-image"
-// import ButtonConnect from "../button/connect"
+import ButtonConnect from "../button/connect"
 
 export default async function Header() {
 	return (
@@ -17,7 +17,7 @@ export default async function Header() {
 					useWindowHeight={false}
 				/>
 				<NavHeader />
-				{/* <ButtonConnect /> */}
+				<ButtonConnect />
 			</div>
 		</header>
 	)
