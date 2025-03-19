@@ -2,7 +2,8 @@ import type { Metadata } from "next"
 import { headers } from "next/headers"
 import { ReactNode } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
-// import { EdgeStoreProvider } from "@/lib/edgestore"
+import { EdgeStoreProvider } from "@/lib/edgestore"
+import { getCommit } from "@/lib/versions"
 
 import ContextProvider from "@/components/module/reown/context"
 import Layout from "@/components/module/general/layout"
@@ -21,7 +22,8 @@ export default async function RootLayout({
 }>) {
 	const headersObj = await headers();
 	const cookies = headersObj.get('cookie')
-  
+	const { year, title, version, hash} = getCommit()
+
 	return (
 		<html lang="en" suppressHydrationWarning>
         	<head />
@@ -34,13 +36,13 @@ export default async function RootLayout({
 					// enableSystem
 					disableTransitionOnChange
 				>
-					{/* <EdgeStoreProvider> */}
-						<ContextProvider cookies={cookies}>
-							<Layout>
+					<ContextProvider cookies={cookies}>
+						<EdgeStoreProvider>
+							<Layout year={year} title={title} version={version} hash={hash}>
 								{children}
 							</Layout>
-						</ContextProvider>
-					{/* </EdgeStoreProvider> */}
+						</EdgeStoreProvider>
+					</ContextProvider>
 				</ThemeProvider>
 			</body>
 		</html>

@@ -7,7 +7,7 @@ import { InferSelectModel } from "drizzle-orm"
 import { investment } from "@/db/schema"
 import { truncateText } from "@/lib/utils"
 
-// import ImageDynamic from "@/components/ui/dynamic-image"
+import ImageDynamic from "@/components/ui/dynamic-image"
 
 export default function ViewListing() {
 	const router = useRouter()
@@ -94,7 +94,7 @@ export default function ViewListing() {
 						</div> */}
 						{info?.map((itm) => (
 							<div key={itm.id} className={`border border-accent rounded-xl hover:scale-105`}>
-								{/* <ImageDynamic
+								<ImageDynamic
 									title={itm.title}
 									className={`grid w-full rounded-xl`}
 									light={itm.images ? itm.images[0] : ""}
@@ -103,7 +103,7 @@ export default function ViewListing() {
 									height={1920}
 									useWindowWidth={false}
 									useWindowHeight={false}
-								/> */}
+								/>
 								<div className={`grid gap-4 p-4`}>
 									<p className={`font-bold text-xl`}>
 										{truncateText(itm.title)}

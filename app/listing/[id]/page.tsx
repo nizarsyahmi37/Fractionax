@@ -9,12 +9,13 @@ import { investment, user } from "@/db/schema"
 import { createPublicClient, formatEther, getAddress, http, isAddress, parseEther } from "viem"
 import { scrollSepolia } from "viem/chains"
 // import { useEdgeStore } from "@/lib/edgestore"
-// import ImageDynamic from "@/components/ui/dynamic-image"
 import { wagmiAbi } from "@/abi"
 import { isValidEmail, truncateAddress } from "@/lib/utils"
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { useAppKitAccount } from "@reown/appkit/react"
 import { useWriteContract } from "wagmi"
+
+import ImageDynamic from "@/components/ui/dynamic-image"
 
 export default function Page({
 	params,
@@ -66,23 +67,23 @@ export default function Page({
 			value: parseEther((amount * 0.02).toString())
 		})
 
-		// const { request } = await createPublicClient({
-		// 	chain: scrollSepolia,
-		// 	transport: http()
-		//   }).simulateContract({
-		// 	address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
-		// 	abi: wagmiAbi,
-		// 	functionName: 'buy',
-		// 	args: [
+		const { request } = await createPublicClient({
+			chain: scrollSepolia,
+			transport: http()
+		  }).simulateContract({
+			address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
+			abi: wagmiAbi,
+			functionName: 'buy',
+			args: [
 				
-		// 	],
-		// 	account: getAddress(account.address ? account.address?.toString() : "0x0000000000000000000000000000000000000000"),
-		// 	value: parseEther('1')
-		// })
-		// await createWalletClient({
-		// 	chain: scrollSepolia,
-		// 	transport: custom(window.ethereum)
-		// }).writeContract(request)		  
+			],
+			account: getAddress(account.address ? account.address?.toString() : "0x0000000000000000000000000000000000000000"),
+			value: parseEther('1')
+		})
+		await createWalletClient({
+			chain: scrollSepolia,
+			transport: custom(window.ethereum)
+		}).writeContract(request)		  
 	}
 	  
 	useEffect(() => {
@@ -181,8 +182,7 @@ export default function Page({
 							<ChevronLeft /> Back to listings
 						</div>
 						<div className={`grid grid-cols-[2fr_1fr] gap-8 min-h-[450px] my-8 items-center`}>
-							<img className={`grid w-full border rounded-xl`} width={1920} height={1920} alt={`${info?.title}`} src={`${info?.images ? info?.images[0] : ""}`} />
-							{/* <ImageDynamic
+							<ImageDynamic
 								title={`${info?.title}`}
 								className={`grid w-full border rounded-xl`}
 								light={info?.images ? info?.images[0] : ""}
@@ -191,8 +191,8 @@ export default function Page({
 								height={1920}
 								useWindowWidth={false}
 								useWindowHeight={false}
-							/> */}
-							{/* <div className={`grid gap-8 h-full`}>
+							/>
+							<div className={`grid gap-8 h-full`}>
 								{info?.images && info?.images.map((lst, i) => (
 									i > 0 && <ImageDynamic
 										title={`${info?.title}`}
@@ -206,7 +206,7 @@ export default function Page({
 										key={i}
 									/>
 								))}
-							</div> */}
+							</div>
 						</div>
 						<div className={`grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12`}>
 							<div className={`grid gap-8 h-fit`}>

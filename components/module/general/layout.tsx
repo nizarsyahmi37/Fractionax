@@ -1,13 +1,21 @@
 import { ReactNode } from "react"
 
-// import Header from "./header"
+import Header from "./header"
 import Footer from "./footer"
 import { AlertTriangle } from "lucide-react"
 
 export default async function Layout({
 	children,
+	year,
+	title,
+	version,
+	hash
 }: Readonly<{
 	children: ReactNode
+	year: string
+	title: string
+	version: string
+	hash: string
 }>) {  
 	return (
 		<div>
@@ -16,13 +24,13 @@ export default async function Layout({
 					<AlertTriangle /> This platform is only open for testing on Scroll Sepolia.
 				</div>
 			</div>
-			{/* <Header /> */}
+			<Header />
 			<main
 				className={`min-h-[100vh] items-center content-center p-8`}
 			>
 				{children}
 			</main>
-			<Footer />
+			<Footer year={year} title={title} version={version} hash={hash} />
 		</div>
 	)
 }

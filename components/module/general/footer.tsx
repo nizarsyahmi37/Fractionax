@@ -1,9 +1,16 @@
 import { terms } from "@/content/general/general"
-import { getCommit } from "@/lib/versions"
 
-export default async function Footer() {
-	const { year, title, version, hash} = getCommit()
-
+export default async function Footer({
+	year,
+	title,
+	version,
+	hash
+} : {
+	year: string
+	title: string
+	version: string
+	hash: string
+}) {
 	return (
 		<footer className={`text-center p-4`}>
 			<p className={``}>
