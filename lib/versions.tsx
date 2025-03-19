@@ -2,11 +2,19 @@ import child_process from "child_process"
 import pkg from "@/package.json"
 
 export const getCommit = () => {
-	const commitHash: string = child_process
-		.execSync("git log --pretty=format:'%h' -n1")
-		.toString()
-		.trim()
+	let commitHash: string
 
+	try {
+		commitHash = child_process
+			.execSync("git log --pretty=format:'%h' -n1")
+			.toString()
+			.trim()
+	} catch (error) {
+		commitHash = process.env.VERCEL_GIT_COMMIT_SHA
+			? process.env.VERCEL_GIT_COMMIT_SHA.substring(0, 7) // Shorten SHA
+			: "unknown"
+	}
+	
 	return {
 		name: pkg.name,
 		title: pkg.title,
