@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fractionax
 ***Own the Unreachable, Together***
 
@@ -66,3 +67,6 @@ This project has previously been submitted to Scroll Open Hackathon and won the 
 - [nizarsyahmi37](https://github.com/nizarsyahmi37 "nizarsyahmi37")
 - [dahrichan13](https://github.com/dahrichan13 "dahrichan13")
 - [http-kylie](https://github.com/http-kylie "http-kylie")
+=======
+# Fractionax
+>>>>>>> 8506f52 (refactor: Rebrand the whole project)
