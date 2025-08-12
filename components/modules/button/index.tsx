@@ -7,17 +7,20 @@ export function Button({
 	eventValue = "xyz",
 	buttonTitle = "Send event",
 	className,
-	id
+	id,
+	type = "button"
 } : {
 	eventName: string
 	eventValue: string
 	buttonTitle: any
 	className?: string
 	id?: string
+	type?: "submit" | "reset" | "button" | undefined
 }) {
 	return (
 		<button
 			id={id}
+			type={type}
 			className={className}
 			onClick={() => sendGTMEvent({
 				event: eventName,

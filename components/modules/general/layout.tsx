@@ -14,8 +14,8 @@ export default async function Layout({
 			className={`grid grid-rows-[auto_1fr] w-full h-[100vh] min-w-[100vw] min-h-[100vh] max-w-[100vw] max-h-[100vh]`}
 		>
 			<Header />
-			<ScrollArea className={`w-full h-full`}>
-				<main>
+			<ScrollArea className={`grid grid-rows-[auto_1fr] w-full h-full`}>
+				<main className={`min-h-[50vh] p-4 lg:p-8`}>
 					{children}
 				</main>
 				<Footer />

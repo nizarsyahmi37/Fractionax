@@ -3,6 +3,7 @@ import { headers } from "next/headers"
 import { ReactNode } from "react"
 import { GoogleTagManager } from "@next/third-parties/google"
 import { ThemeProvider } from "@/components/modules/general/theme"
+import { Toaster } from "@/components/ui/sonner"
 import { inter } from "@/lib/font"
 
 import ContextProvider from "@/components/modules/reown/context"
@@ -154,6 +155,7 @@ export default async function RootLayout({
 					<ContextProvider cookies={cookies}>
 						<Layout>
 							{children}
+							<Toaster />
 						</Layout>
 					</ContextProvider>
 				</ThemeProvider>

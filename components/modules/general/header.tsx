@@ -12,8 +12,8 @@ export default function Header() {
 	const router = useRouter()
 
 	return (
-		<header className="bg-background/75 bg-clip-content backdrop-filter backdrop-blur-[3px] grid grid-cols-[1fr_auto] gap-2 md:gap-8 xl:gap-12 w-full sticky top-0 z-[102]">
-			<div className="grid items-center px-4 lg:px-8 gap-4 lg:gap-8">
+		<header className={`bg-gradient-to-br from-0% from-background/70 via-40% via-background/85 to-100% to-background/70 bg-clip-content backdrop-filter backdrop-blur-[3px] grid grid-cols-[1fr_auto] gap-2 md:gap-8 xl:gap-12 w-full sticky top-0 z-[102]`}>
+			<div className={`grid items-center px-4 lg:px-8 gap-4 lg:gap-8`}>
 				<ImageDynamic
 					title={general.title}
 					className={`w-auto h-auto cursor-pointer mb-1 max-h-[3rem] [transition-duration:500ms] hover:scale-105`}
@@ -26,7 +26,7 @@ export default function Header() {
 					onClick={() => router.push("/")}
 				/>
 			</div>
-			<div className="grid grid-cols-[auto_1fr] items-center gap-4 p-4 lg:px-8">
+			<div className={`grid grid-cols-[auto_1fr] items-center gap-4 p-4`}>
 				<ButtonTheme />
 				{/* <ButtonLaunch
 					normal={true}
