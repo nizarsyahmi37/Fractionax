@@ -21,7 +21,7 @@ export function NavigationFooter({
 
 	return (
 		<div className={className}>
-			<h3 className={`${titleClass} font-bold`}>
+			<h3 className={`${titleClass} text-accent-foreground font-bold`}>
 				{title}
 			</h3>
 			<ul>

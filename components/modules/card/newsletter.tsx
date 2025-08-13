@@ -112,7 +112,7 @@ export function CardNewsletter() {
 					eventName={`Subscribe to Newsletter`}
 					eventValue={`newsletterSubscription`}
 					buttonTitle={terms.subscribe}
-					className={`bg-secondary text-secondary-foreground font-bold rounded-xl cursor-pointer px-4 py-2 hover:scale-105`}
+					className={`bg-secondary text-secondary-foreground font-bold rounded-xl cursor-pointer px-4 py-2 duration-300 hover:scale-105`}
 				/>
 			</form>
 		</Form>

@@ -1,3 +1,7 @@
+import step1 from "@/public/image/step-1-browse.png"
+import step2 from "@/public/image/step-2-buy.png"
+import step3 from "@/public/image/step-3-track.png"
+
 export const general = {
 	establishYear: "2025",
 	currentYear: "2025",
@@ -18,7 +22,10 @@ export const terms = {
 	your_name: "Your Name",
 	coming_soon: "Coming soon",
 	rights_reserved: "All rights reserved",
-	connect_with_us: "Connect with us"
+	start_investing: "Start investing",
+	explore_assets: "Explore assets",
+	connect_with_us: "Connect with us",
+	scroll_down: "Scroll down"
 }
 
 export const navigation = {
@@ -264,4 +271,39 @@ export const newsletter = {
 export const footer = {
 	risk_disclosure: "Risk disclosure",
 	risk_disclosure_info: "All investments carry inherent risks, including the potential loss of capital. Past performance does not guarantee future results. Asset values may fluctuate due to market conditions and other factors. You are solely responsible for conducting your own due diligence before making any investment decisions."
+}
+
+export const home = {
+	hero: {
+		kicker: "🚀 Breaking barriers to investment",
+		headline: "Own a Piece of Premium Assets",
+		headline_alt: "From Just $1",
+		subheadline: "Break into high-value investments without the high buy-in. Buy and trade fractional ownership in real world assets, earn passive income, and enjoy full liquidity — all in one secure platform."
+	},
+	process: {
+		kicker: "📋 How it works",
+		headline: "Start Investing in",
+		headline_alt: "3 Easy Steps",
+		subheadline: "In just a few clicks, you'll be on your way to building your investment portfolio—easy, transparent, and accessible for everyone.",
+		steps: [
+			{
+				id: "step-1",
+				title: "Browse asset listings",
+				description: "Explore a diverse range of curated assets and discover opportunities that align with your financial goals and risk appetite.",
+				image: step1.src
+			},
+			{
+				id: "step-2",
+				title: "Buy fractions securely",
+				description: "Invest with confidence using secure transactions, supporting both fiat and cryptocurrency payments for maximum flexibility.",
+				image: step2.src
+			},
+			{
+				id: "step-3",
+				title: "Track your ownership",
+				description: "Monitor your portfolio in real time, view returns, track valuations, and measure the positive impact of your investments.",
+				image: step3.src
+			}
+		]
+	}
 }

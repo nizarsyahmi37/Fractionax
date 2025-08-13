@@ -1,61 +1,15 @@
-export default function ViewHome() {
+import MouseScrollDown from "@/components/ui/mouse-scroll"
+import ViewHomeHero from "./hero"
+import ViewHomeProcess from "./process"
+
+export function ViewHome() {
 	return (
 		<div>
-			Home
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
-		<div>
-			Home
-		</div>
+			<ViewHomeHero />
+			<div className={`hidden md:block`}>
+				<MouseScrollDown />
+			</div>
+			<ViewHomeProcess />
 		</div>
 	)
 }

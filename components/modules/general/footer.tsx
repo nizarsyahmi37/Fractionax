@@ -34,7 +34,7 @@ export default function Footer() {
 						</div>
 						<div className={`border-primary-foreground border-t-2 h-[1px] -mx-2`} />
 						<div className={`grid grid-cols-1 xl:grid-cols-[auto_1fr] gap-y-2 gap-x-4`}>
-							<h3 className={`font-bold`}>
+							<h3 className={`font-bold text-accent-foreground`}>
 								{terms.connect_with_us}:
 							</h3>
 							<div className={`flex gap-4`}>
