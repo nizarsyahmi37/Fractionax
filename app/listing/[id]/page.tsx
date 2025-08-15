@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import { InferSelectModel } from "drizzle-orm"
 import { investment, user } from "@/db/schema"
 import { createPublicClient, formatEther, getAddress, http, isAddress, parseEther } from "viem"
-import { scrollSepolia } from "viem/chains"
+import { coreTestnet2 } from "viem/chains"
 // import { useEdgeStore } from "@/lib/edgestore"
 import { wagmiAbi } from "@/abi"
 import { isValidEmail, truncateAddress } from "@/lib/utils"
@@ -68,7 +68,7 @@ export default function Page({
 		})
 
 		// const { request } = await createPublicClient({
-		// 	chain: scrollSepolia,
+		// 	chain: coreTestnet2,
 		// 	transport: http()
 		//   }).simulateContract({
 		// 	address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
@@ -81,7 +81,7 @@ export default function Page({
 		// 	value: parseEther('1')
 		// })
 		// await createWalletClient({
-		// 	chain: scrollSepolia,
+		// 	chain: coreTestnet2,
 		// 	transport: custom(window.ethereum)
 		// }).writeContract(request)		  
 	}
@@ -98,7 +98,7 @@ export default function Page({
 				setUsr(dt.data.result[0])
 				
 				const valueCap = await createPublicClient({
-					chain: scrollSepolia,
+					chain: coreTestnet2,
 					transport: http()
 				  }).readContract({
 					address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
@@ -107,7 +107,7 @@ export default function Page({
 				})
 
 				const valueBought = await createPublicClient({
-					chain: scrollSepolia,
+					chain: coreTestnet2,
 					transport: http()
 				  }).readContract({
 					address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
@@ -116,7 +116,7 @@ export default function Page({
 				})
 
 				const valueInvestors = await createPublicClient({
-					chain: scrollSepolia,
+					chain: coreTestnet2,
 					transport: http()
 				  }).readContract({
 					address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
@@ -125,7 +125,7 @@ export default function Page({
 				})
 
 				const addressToken = await createPublicClient({
-					chain: scrollSepolia,
+					chain: coreTestnet2,
 					transport: http()
 				  }).readContract({
 					address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
@@ -242,7 +242,7 @@ export default function Page({
 							<div className={`grid gap-2`}>
 								<div className={`h-fit border border-accent rounded-xl p-8 grid gap-2`}>
 									<h3 className={`font-semibold text-center text-4xl`}>
-										{formatEther(cap)} <span className={`text-2xl`}>{scrollSepolia.nativeCurrency.symbol}</span> 
+										{formatEther(cap)} <span className={`text-2xl`}>{coreTestnet2.nativeCurrency.symbol}</span> 
 									</h3>
 									<Progress.Root
 										className="relative h-4 w-full overflow-hidden rounded-full bg-foreground/15"
@@ -344,7 +344,7 @@ export default function Page({
 											Min. investment
 										</p>
 										<p className={`text-right font-bold`}>
-											{formatEther(parseEther(info?.minimum))} {scrollSepolia.nativeCurrency.symbol}
+											{formatEther(parseEther(info?.minimum))} {coreTestnet2.nativeCurrency.symbol}
 										</p>
 									</div>
 									<div className={`grid grid-cols-2 gap-2`}>
@@ -352,7 +352,7 @@ export default function Page({
 											Max. investment
 										</p>
 										<p className={`text-right font-bold`}>
-											{formatEther(parseEther(info?.maximum))} {scrollSepolia.nativeCurrency.symbol}
+											{formatEther(parseEther(info?.maximum))} {coreTestnet2.nativeCurrency.symbol}
 										</p>
 									</div>
 									<div className={`my-2 border border-foreground/15`} />
