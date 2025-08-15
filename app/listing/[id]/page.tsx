@@ -57,7 +57,7 @@ export default function Page({
 	
 	async function buyToken() {
 		writeContract({
-			address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
+			address: '0x35B55F36A88240BAbC35F9681163c57608D34CeD',
 			abi: wagmiAbi,
 			functionName: 'buy',
 			args: [
@@ -71,7 +71,7 @@ export default function Page({
 		// 	chain: coreTestnet2,
 		// 	transport: http()
 		//   }).simulateContract({
-		// 	address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
+		// 	address: '0x35B55F36A88240BAbC35F9681163c57608D34CeD',
 		// 	abi: wagmiAbi,
 		// 	functionName: 'buy',
 		// 	args: [
@@ -101,7 +101,7 @@ export default function Page({
 					chain: coreTestnet2,
 					transport: http()
 				  }).readContract({
-					address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
+					address: '0x35B55F36A88240BAbC35F9681163c57608D34CeD',
 					abi: wagmiAbi,
 					functionName: 'cap',
 				})
@@ -110,7 +110,7 @@ export default function Page({
 					chain: coreTestnet2,
 					transport: http()
 				  }).readContract({
-					address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
+					address: '0x35B55F36A88240BAbC35F9681163c57608D34CeD',
 					abi: wagmiAbi,
 					functionName: 'bought',
 				})
@@ -119,7 +119,7 @@ export default function Page({
 					chain: coreTestnet2,
 					transport: http()
 				  }).readContract({
-					address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
+					address: '0x35B55F36A88240BAbC35F9681163c57608D34CeD',
 					abi: wagmiAbi,
 					functionName: 'investors',
 				})
@@ -128,7 +128,7 @@ export default function Page({
 					chain: coreTestnet2,
 					transport: http()
 				  }).readContract({
-					address: '0x87BB0bD92a39744A4c15dc724db7Ee6cd4bea8cA',
+					address: '0x35B55F36A88240BAbC35F9681163c57608D34CeD',
 					abi: wagmiAbi,
 					functionName: 'token',
 				})
