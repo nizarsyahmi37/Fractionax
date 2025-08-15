@@ -21,7 +21,7 @@ export default async function Layout({
 		<div>
 			<div className={`bg-red-700 text-white font-bold text-center p-2`}>
 				<div className={`flex gap-2 mx-auto w-fit`}>
-					<AlertTriangle /> This platform is only open for testing on Scroll Sepolia.
+					<AlertTriangle /> This platform is only open for testing on Core Testnet2.
 				</div>
 			</div>
 			<Header />
