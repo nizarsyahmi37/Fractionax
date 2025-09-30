@@ -1,15 +1,11 @@
 import type { Metadata } from "next"
-import { headers } from "next/headers"
 import { ReactNode } from "react"
+import { Analytics } from "@vercel/analytics/next"
 import { GoogleTagManager } from "@next/third-parties/google"
 import { ThemeProvider } from "@/components/modules/general/theme"
-import { Toaster } from "@/components/ui/sonner"
 import { inter } from "@/lib/font"
 
-import ContextProvider from "@/components/modules/reown/context"
-import Layout from "@/components/modules/general/layout"
-
-import "./globals.css"
+import "../globals.css"
 
 export const metadata: Metadata = {
 	title: {
@@ -134,9 +130,6 @@ export default async function RootLayout({
 }: Readonly<{
 	children: ReactNode
 }>) {
-	const headersData = await headers()
-	const cookies = headersData.get("cookie")
-
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head />
@@ -152,12 +145,7 @@ export default async function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<ContextProvider cookies={cookies}>
-						<Layout>
-							{children}
-							<Toaster />
-						</Layout>
-					</ContextProvider>
+					{children}
 				</ThemeProvider>
 			</body>
 		</html>

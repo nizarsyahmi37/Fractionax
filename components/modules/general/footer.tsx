@@ -33,23 +33,25 @@ export default function Footer() {
 							<CardFooter />
 						</div>
 						<div className={`border-primary-foreground border-t-2 h-[1px] -mx-2`} />
-						<div className={`grid grid-cols-1 xl:grid-cols-[auto_1fr] gap-y-2 gap-x-4`}>
+						<div className={`grid grid-cols-1 xl:grid-cols-[auto_1fr] gap-y-2 gap-x-4 align-middle`}>
 							<h3 className={`font-bold text-accent-foreground`}>
 								{terms.connect_with_us}:
 							</h3>
-							<div className={`flex gap-4`}>
+							<div className={`flex flex-wrap gap-6`}>
 								{socials.data.map((item) => (
 									<a
 										key={item.id}
 										href={item.link}
 										target={`_blank`}
 										title={item.description ? item.description : item.title}
+										className={`hover:scale-110 hover:text-secondary`}
 									>
-										<p
+										{item.symbol}
+										{/* <p
 											className={`text-primary-foreground hover:text-secondary`}
 										>
 											{item.title}
-										</p>
+										</p> */}
 									</a>
 								))}
 							</div>

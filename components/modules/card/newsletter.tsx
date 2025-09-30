@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { errors, newsletter, terms } from "@/locales/en"
-import { Button } from "../button"
+import { ButtonWithGTM } from "../button"
 
 const FormSchema = z.object({
 	name: z.string()
@@ -37,12 +37,24 @@ export function CardNewsletter() {
 		}
 	})
 
-	function onSubmit(data: z.infer<typeof FormSchema>) {
+	async function onSubmit(data: z.infer<typeof FormSchema>) {
+		const response = await fetch("/api/newsletter", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify({
+				name: data.name,
+				email: data.email
+			})
+		})
+		const res = await response.json()
 		toast(newsletter.notification, {
 			description: (
 				<pre className={`mt-2 w-[320px] rounded-md bg-foreground p-4`}>
 					<code className={`text-background`}>
 						{JSON.stringify(data, null, 2)}
+						{/* {res} */}
 					</code>
 				</pre>
 			)
@@ -107,7 +119,7 @@ export function CardNewsletter() {
 						</FormItem>
 					)}
 				/>
-				<Button
+				<ButtonWithGTM
 					type={`submit`}
 					eventName={`Subscribe to Newsletter`}
 					eventValue={`newsletterSubscription`}

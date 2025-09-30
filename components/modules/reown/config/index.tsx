@@ -2,7 +2,7 @@ import type { AppKitNetwork } from "@reown/appkit/networks"
 
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi"
 import { SolanaAdapter } from "@reown/appkit-adapter-solana/react"
-import { mainnet, arbitrum, solana, solanaDevnet, solanaTestnet, polygon, bsc, scroll, coreDao } from "@reown/appkit/networks"
+import { mainnet, arbitrum, solana, solanaDevnet, solanaTestnet, polygon, bsc, scroll } from "@reown/appkit/networks"
 
 // Get projectId from https://cloud.reown.com
 export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID || "b56e18d47c72ab683b10814fe9495694" // this is a public projectId only to use on localhost
@@ -16,7 +16,6 @@ export const networks = [
 	polygon,
 	bsc,
 	scroll,
-	coreDao,
 	arbitrum,
 	// solana,
 	// solanaDevnet,

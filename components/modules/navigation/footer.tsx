@@ -1,6 +1,6 @@
 "use client"
 
-import { useRouter } from "next/navigation"
+// import { useRouter } from "next/navigation"
 import { terms } from "@/locales/en"
 import { Link } from "@/types/general"
 
@@ -17,7 +17,7 @@ export function NavigationFooter({
 	titleClass?: string
 	navClass?: string
 }) {
-	const router = useRouter()
+	// const router = useRouter()
 
 	return (
 		<div className={className}>
