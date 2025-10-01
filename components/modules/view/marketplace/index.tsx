@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import ViewHomeListingGrid from "./grid"
 import ViewHomeListingList from "./list"
 import ViewHomeListingPagination from "./pagination"
+import { ListingItem } from "@/types/listing"
 
 type ViewMode = "list" | "grid"
 type VotingFilter = "all" | "voted" | "not-voted"
@@ -31,26 +32,26 @@ export default function ViewHomeListing({
 	const filteredData = useMemo(() => {
 		let filtered = proposalData
 
-		// Apply voting filter
-		if (votingFilter === "voted") {
-			filtered = filtered.filter(item => item.voted)
-		} else if (votingFilter === "not-voted") {
-			filtered = filtered.filter(item => !item.voted)
-		}
+		// // Apply voting filter
+		// if (votingFilter === "voted") {
+		// 	filtered = filtered.filter(item => item.voted)
+		// } else if (votingFilter === "not-voted") {
+		// 	filtered = filtered.filter(item => !item.voted)
+		// }
 
-		// Apply status filter
-		if (statusFilter !== "all") {
-			filtered = filtered.filter(item => item.status.toLowerCase() === statusFilter)
-		}
+		// // Apply status filter
+		// if (statusFilter !== "all") {
+		// 	filtered = filtered.filter(item => item.status.toLowerCase() === statusFilter)
+		// }
 
-		// Apply search filter
-		if (searchTerm) {
-			filtered = filtered.filter(item =>
-				item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-				item.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-				item.creator.toLowerCase().includes(searchTerm.toLowerCase())
-			)
-		}
+		// // Apply search filter
+		// if (searchTerm) {
+		// 	filtered = filtered.filter(item =>
+		// 		item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+		// 		item.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+		// 		item.creator.toLowerCase().includes(searchTerm.toLowerCase())
+		// 	)
+		// }
 
 		return filtered
 	}, [votingFilter, statusFilter, searchTerm, proposalData])

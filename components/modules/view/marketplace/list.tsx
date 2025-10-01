@@ -3,6 +3,7 @@ import { Copy, ExternalLink } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { truncateAddress } from "@/lib/utils"
+import { ListingItem } from "@/types/listing"
 
 export default function ViewHomeListingList({
 	paginatedData,
@@ -28,7 +29,7 @@ export default function ViewHomeListingList({
 	return (
 		<div className="border rounded-lg overflow-hidden">
 			<div className="hidden md:block">
-				<Table>
+				{/* <Table>
 					<TableHeader>
 						<TableRow>
 							<TableHead>Title</TableHead>
@@ -72,11 +73,11 @@ export default function ViewHomeListingList({
 							</TableRow>
 						))}
 					</TableBody>
-				</Table>
+				</Table> */}
 			</div>
 
 			<div className="md:hidden">
-				{paginatedData.map((item) => (
+				{/* {paginatedData.map((item) => (
 					<div key={item.id} className="p-4 border-b last:border-b-0 hover:bg-muted/50">
 						<div className="flex items-start justify-between mb-2">
 							<h3 className="font-medium text-base">
@@ -109,7 +110,7 @@ export default function ViewHomeListingList({
 							</div>
 						</div>
 					</div>
-				))}
+				))} */}
 			</div>
 		</div>
 	)

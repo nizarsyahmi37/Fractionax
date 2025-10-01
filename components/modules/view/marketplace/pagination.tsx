@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ListingItem } from "@/types/listing"
 
 export default function ViewHomeListingPagination({
 	totalPages,
