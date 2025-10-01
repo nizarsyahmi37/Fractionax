@@ -60,7 +60,7 @@ export default function ViewHomeHero() {
 					<span className={`z-[110] mx-auto col-start-1 col-end-2 row-start-1 row-end-2 border border-foreground bg-foreground w-16 h-4 mt-2 rounded-full`} />
 					<div className={`col-start-1 col-end-2 row-start-1 row-end-2 grid w-[292px] rounded-[11.5px] max-h-full p-4 pt-8`}>
 						<div>
-							Makan
+							
 						</div>
 					</div>
 
