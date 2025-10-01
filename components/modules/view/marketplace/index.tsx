@@ -30,7 +30,8 @@ export default function ViewHomeListing({
 
 	// Filter and search logic
 	const filteredData = useMemo(() => {
-		let filtered = proposalData
+		// let filtered = proposalData
+		const filtered = proposalData
 
 		// // Apply voting filter
 		// if (votingFilter === "voted") {
