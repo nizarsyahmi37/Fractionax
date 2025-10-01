@@ -1,9 +1,9 @@
 import { toast } from "sonner"
-import { Copy, ExternalLink } from "lucide-react"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Label } from "@/components/ui/label"
-import { truncateAddress } from "@/lib/utils"
+// import { Copy, ExternalLink } from "lucide-react"
+// import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+// import { Badge } from "@/components/ui/badge"
+// import { Label } from "@/components/ui/label"
+// import { truncateAddress } from "@/lib/utils"
 import { ListingItem } from "@/types/listing"
 
 export default function ViewHomeListingGrid({

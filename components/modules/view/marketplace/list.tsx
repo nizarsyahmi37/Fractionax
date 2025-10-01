@@ -1,8 +1,8 @@
 import { toast } from "sonner"
-import { Copy, ExternalLink } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { truncateAddress } from "@/lib/utils"
+// import { Copy, ExternalLink } from "lucide-react"
+// import { Badge } from "@/components/ui/badge"
+// import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+// import { truncateAddress } from "@/lib/utils"
 import { ListingItem } from "@/types/listing"
 
 export default function ViewHomeListingList({
