@@ -10,7 +10,7 @@ import { inter } from "@/lib/font"
 import ContextProvider from "@/components/modules/reown/context"
 import Layout from "@/components/modules/general/layout"
 
-import "../globals.css"
+import "../../globals.css"
 
 export const metadata: Metadata = {
 	title: {
