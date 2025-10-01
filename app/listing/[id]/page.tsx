@@ -14,8 +14,8 @@ import { isValidEmail, truncateAddress } from "@/lib/utils"
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { useAppKitAccount } from "@reown/appkit/react"
 import { useWriteContract } from "wagmi"
+import ImageDynamic from "@/components/modules/image/dynamic"
 
-import ImageDynamic from "@/components/ui/dynamic-image"
 
 export default function Page({
 	params,
