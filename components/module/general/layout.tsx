@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 
-import Header from "./header"
-import Footer from "./footer"
+import Header from "../../modules/general/header"
+import Footer from "../../modules/general/footer"
 import { AlertTriangle } from "lucide-react"
 
 export default async function Layout({
@@ -30,7 +30,8 @@ export default async function Layout({
 			>
 				{children}
 			</main>
-			<Footer year={year} title={title} version={version} hash={hash} />
+			{/* <Footer year={year} title={title} version={version} hash={hash} /> */}
+			<Footer/>
 		</div>
 	)
 }
