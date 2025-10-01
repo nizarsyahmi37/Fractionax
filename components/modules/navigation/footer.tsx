@@ -3,6 +3,7 @@
 // import { useRouter } from "next/navigation"
 import { terms } from "@/locales/en"
 import { Link } from "@/types/general"
+import { ReactNode } from "react"
 
 export function NavigationFooter({
 	title,
@@ -11,7 +12,7 @@ export function NavigationFooter({
 	titleClass,
 	navClass
 } : {
-	title: any
+	title: ReactNode
 	data: Link[]
 	className?: string
 	titleClass?: string

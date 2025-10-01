@@ -1,4 +1,4 @@
-<div className="relative">
+{/* <div className="relative">
 							// Main Content Card
 							<div className="relative mb-6 ml-auto w-80 rounded-2xl bg-gradient-to-br from-primary to-secondary p-6 text-white shadow-xl">
 								<h3 className="mb-4 text-xl font-semibold">Fractional Ownership That Delivers Results</h3>
@@ -83,4 +83,4 @@
 								// Dashed line to main card
 								<div className="absolute top-1/2 left-0 w-16 h-px border-t-2 border-dashed border-gray-300" />
 							</div>
-						</div>
+						</div> */}

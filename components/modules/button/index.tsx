@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { sendGTMEvent } from "@next/third-parties/google"
+import { ReactNode } from "react"
 
 export function ButtonWithGTM({
 	eventName = "buttonClicked",
@@ -14,7 +15,7 @@ export function ButtonWithGTM({
 } : {
 	eventName: string
 	eventValue: string
-	buttonTitle: any
+	buttonTitle: ReactNode
 	className?: string
 	id?: string
 	type?: "submit" | "reset" | "button" | undefined
