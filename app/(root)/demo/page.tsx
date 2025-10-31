@@ -6,6 +6,7 @@ import { Link } from "lucide-react"
 import { useEffect, useState } from "react"
 import { createPublicClient, formatEther, getAddress, http, isAddress, parseEther } from "viem"
 import { coreTestnet2 } from "viem/chains"
+import { solanaDevnet } from "@reown/appkit/networks"
 import { useRouter } from "next/navigation"
 import { Progress } from "radix-ui"
 import { useAppKitAccount } from "@reown/appkit/react"
@@ -171,7 +172,7 @@ export default function Page() {
 					<div className={`grid gap-2`}>
 						<div className={`h-fit border border-accent rounded-xl p-8 grid gap-2`}>
 							<h3 className={`font-semibold text-center text-4xl`}>
-								{formatEther(cap)} <span className={`text-2xl`}>{coreTestnet2.nativeCurrency.symbol}</span> 
+								{formatEther(cap)} <span className={`text-2xl`}>{solanaDevnet.nativeCurrency.symbol}</span> 
 							</h3>
 							<Progress.Root
 								className="relative h-4 w-full overflow-hidden rounded-full bg-foreground/15"
@@ -277,7 +278,7 @@ export default function Page() {
 									Min. investment
 								</p>
 								<p className={`text-right font-bold`}>
-									{formatEther(parseEther("0.000000001"))} {coreTestnet2.nativeCurrency.symbol}
+									{formatEther(parseEther("0.000000001"))} {solanaDevnet.nativeCurrency.symbol}
 								</p>
 							</div>
 							<div className={`grid grid-cols-2 gap-2`}>
@@ -285,7 +286,7 @@ export default function Page() {
 									Max. investment
 								</p>
 								<p className={`text-right font-bold`}>
-										{formatEther(parseEther("1"))} {coreTestnet2.nativeCurrency.symbol}
+										{formatEther(parseEther("1"))} {solanaDevnet.nativeCurrency.symbol}
 								</p>
 							</div>
 							<div className={`my-2 border border-foreground/15`} />

@@ -17,9 +17,9 @@ export const networks = [
 	bsc,
 	scroll,
 	arbitrum,
-	// solana,
-	// solanaDevnet,
-	// solanaTestnet
+	solana,
+	solanaDevnet,
+	solanaTestnet
 ] as [
 	AppKitNetwork,
 	...AppKitNetwork[]

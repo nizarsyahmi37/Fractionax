@@ -19,6 +19,7 @@ export const general = {
 export const terms = {
 	loading: "Loading",
 	login: "Login",
+	search: "Search",
 	dashboard: "Dashboard",
 	subscribe: "Subscribe",
 	email: "Email",
@@ -27,6 +28,7 @@ export const terms = {
 	your_name: "Your Name",
 	our_team: "Our Team",
 	coming_soon: "Coming soon",
+	search_projects: "Search projects",
 	rights_reserved: "All rights reserved",
 	start_investing: "Start investing",
 	explore_assets: "Explore assets",
